@@ -5,10 +5,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 const routes:Routes  = [
   { path: '', redirectTo: 'homepage', pathMatch: 'full'},
-  { path: 'homepage', component: HomepageComponent, pathMatch: 'full',
-children: [{
-  path: 'homepage', component: SidenavComponent
-}]},
+  { path: 'homepage', component: HomepageComponent, pathMatch: 'full'},
   { path: 'projects', component: ProjectsComponent, pathMatch: 'full'}
 ];
 

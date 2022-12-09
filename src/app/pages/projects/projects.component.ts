@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import projectsCards from '../../../assets/resources/projectsCards.json';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  projects : {"header": string, "content": string}[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    projectsCards.cards.forEach(c => {
+      this.projects.push({"header": c.header, "content": c.content});
+    });
   }
 
 }

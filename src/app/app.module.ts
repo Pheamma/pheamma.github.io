@@ -7,6 +7,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 
+import { MatCardModule } from '@angular/material/card';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -19,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

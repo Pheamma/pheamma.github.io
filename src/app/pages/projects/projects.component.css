@@ -1,4 +1,15 @@
-.projectsContent{
-    left:auto;
-    top:auto;
+.projectsTitle {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectCard {
+    width: 200px;
+    
+}
+
+.highPriority {
+    z-index: 1000;
+}
+
+.backgroundCards{
 }

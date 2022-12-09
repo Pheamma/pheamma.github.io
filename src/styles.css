@@ -1,3 +1,6 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
 .backgroundPage {
     background-color: #F4F4F6;
     background-size: cover;
@@ -26,7 +29,7 @@
     background-color:#7785AC;
     background-size: cover;
     position:absolute;
-    width:20%;
+    width:15rem;
     height: 100vh;
 }
 

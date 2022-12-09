@@ -1,0 +1,73 @@
+.backgroundPage {
+    background-color: #F4F4F6;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lightText {
+    color: #F4F4F6;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.normalText {
+    color: #646473;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlightedText:hover {
+    color: #97EFE9;
+    cursor: pointer;
+}
+
+.backgroundSidenav {
+    background-color:#7785AC;
+    background-size: cover;
+    position:absolute;
+    width:20%;
+    height: 100vh;
+}
+
+.sidenavText {
+    color:#F4F4F6;
+}
+
+.titleText {
+    color:#7785AC;
+    font-family: ControlFreak;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.sidenavIcon::before{
+    content:'\f0c9';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.sidenavButton {
+    background-color: transparent;
+    border: 0px transparent solid;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    z-index: 1000;
+    height:20px;
+    width:20px;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(../node_modules/font-awesome/css/font-awesome.min.css);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ControlFreak;
+    src: url(./assets/fonts/control_freak/CONTF___.ttf) format("truetype");
+}

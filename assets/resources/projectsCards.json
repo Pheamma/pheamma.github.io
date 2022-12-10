@@ -1,12 +1,16 @@
 {
     "cards" : [
         {
-            "header": "prova1",
-            "content": "this is prova 1"
+            "header": "Pixieng",
+            "content": "An online open source pixel art editor, based on Angular technology.",
+            "link": "https://github.com/Pheamma/pixieng",
+            "linkComment": "Take me to Pixieng"
         },
         {
-            "header": "prova2",
-            "content": "this is prova 2"
+            "header": "There's more to come!",
+            "content": "Stay tuned for more ;)",
+            "link": "",
+            "linkComment": ""
         }
     ]
 }

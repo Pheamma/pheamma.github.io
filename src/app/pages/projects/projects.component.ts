@@ -8,13 +8,13 @@ import projectsCards from '../../../assets/resources/projectsCards.json';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects : {"header": string, "content": string}[] = [];
+  projects : {"header": string, "content": string, "link": string, "linkComment": string}[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
     projectsCards.cards.forEach(c => {
-      this.projects.push({"header": c.header, "content": c.content});
+      this.projects.push({"header": c.header, "content": c.content, "link": c.link, "linkComment": c.linkComment});
     });
   }
 

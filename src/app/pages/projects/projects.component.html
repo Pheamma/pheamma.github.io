@@ -4,13 +4,16 @@
         <span class="col-10 titleText">Projects</span>
     </div>
     <div class="row d-flex justify-content-center backgroundCards">
-        <div *ngFor="let p of projects" class="container d-flex justify-content-center projectCard">
-            <div class="col">
+        <div class="container d-flex justify-content-center">
+            <div *ngFor="let p of projects" class="col-1 projectCard">
                 <div class="row d-flex justify-content-center">
                     {{p.header}}
                 </div>
                 <div class="row d-flex justify-content-center">
                     {{p.content}}
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <a style="text-align:center;" target="_blank" href="{{p.link}}">{{p.linkComment}}</a>
                 </div>
             </div>
         </div>

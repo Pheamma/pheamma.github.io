@@ -3,8 +3,53 @@
 }
 
 .projectCard {
-    width: 200px;
-    
+    width: 20vw;
+    background-color: #7785AC;
+    color: #F4F4F6;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px lightgray;
+}
+
+.projectCard:hover {
+    background-color:#97EFE9;
+    color: #7785AC;
+    animation: fillingBackground;
+    animation-duration: 500ms;
+}
+
+.projectCard a {
+    width:fit-content;
+    text-decoration: none;
+    color: #F4F4F6;
+}
+
+.projectCard:hover a {
+    color:#7785AC;
+    animation: changingLinkText;
+    animation-duration: 500ms;
+}
+
+@keyframes changingLinkText{
+    from {color: #F4F4F6;}
+    to {color: #7785AC;}
+}
+
+.projectCard a:hover {
+    color: #F4F4F6;
+}
+
+@keyframes fillingBackground {
+    from {
+        background-color: #7785AC;
+        color: #F4F4F6;
+        opacity: 0.5;
+    }
+    to {
+        background-color: #97EFE9;
+        opacity: 1;
+        color: #7785AC;
+    }
 }
 
 .highPriority {
